@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "94e58ebb-e4f2-4fed-ba74-379b02c2f5df",
+		"name": "Book Management in GO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15787287"
+	},
+	"item": [
+		{
+			"name": "Get books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/book",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"This is a Book - 4\",\r\n    \"Author\":\"Author - 4\",\r\n    \"Publication\":\"Pub - 4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/book",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get book by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/book/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Publication\": \"Publication - 4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9010/book/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9010/book/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9010",
+					"path": [
+						"book",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

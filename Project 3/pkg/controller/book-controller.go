@@ -84,3 +84,7 @@ func UpdateBook(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
 	w.Write(res)
 }
+
+func Check(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("Checking")
+}

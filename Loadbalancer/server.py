@@ -10,5 +10,10 @@ def hello():
     return " 'Hello World !' from "+serverName
 
 
+@app.route("/:name")
+def hello_name(name):
+    return "Hello "+name+" from "+serverName
+
+
 if __name__ == "__main__":
     app.run(port=sys.argv[2])

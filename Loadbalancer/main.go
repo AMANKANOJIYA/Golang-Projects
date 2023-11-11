@@ -20,7 +20,7 @@ var (
 func main() {
 	http.HandleFunc("/", forwardRequest)
 	go startHealthCheck()
-	log.Fatal(http.ListenAndServe(":8000", nil))
+	log.Fatal(http.ListenAndServe(":80", nil))
 }
 
 func forwardRequest(res http.ResponseWriter, req *http.Request) {
